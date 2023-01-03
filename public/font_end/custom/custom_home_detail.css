@@ -1,0 +1,10 @@
+.count_comment_on_detail{
+    font-size:15px;
+}
+.count_product_saled{
+    border-left: 1px solid green;
+    height: 24px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}

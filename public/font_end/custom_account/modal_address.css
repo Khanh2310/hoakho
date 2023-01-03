@@ -1,0 +1,154 @@
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 2px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 45%;
+    height: 380px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--radius-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-cus {
+    padding: 15px;
+    padding-left: 20px;
+    background-color: white;
+    border-top: 3px solid var(--radius-color);
+    color: #000;
+}
+
+.modal-body-cus {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.content-enter-address {
+    background: #f8f8f8;
+    padding: 15px;
+}
+.custom_select_address {
+    padding: 15px;
+}
+.modal-footer {
+    bottom: 0;
+    padding-top: 16px;
+    color: white;
+}
+.modal-content_address {
+    position: relative;
+    background-color: #ffff;
+    margin: auto;
+    border-radius: 2px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    height: 430px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+.modal-content_delete_address {
+    position: relative;
+    background-color: #ffff;
+    margin: auto;
+    border-radius: 2px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+.content-modal-footer-address {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-add-address {
+    background: #f8f8f8;
+    padding: 10px;
+}
+.content-delete-address {
+    background: #f8f8f8;
+    padding: 10px;
+}
+.line {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.input {
+    padding: 10px;
+    height: 40px;
+}
+.select {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    background: white;
+    color: rgb(92, 87, 87);
+}

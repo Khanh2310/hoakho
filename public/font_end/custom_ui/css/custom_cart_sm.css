@@ -1,0 +1,27 @@
+/* custom cart */
+.content_qty_rating{
+    display: flex;
+    justify-content: space-around;
+}
+.name_product{
+    padding: 5px;
+    height: 50px;
+}
+li .content_product_sm{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 230px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cus_cate_name_card_sm{
+    font-size: 13px;
+}
+.cus_prod_name_card_sm{
+    font-size: 14px;
+}
+.cus_price_card_sm{
+    font-size: 14px;
+}

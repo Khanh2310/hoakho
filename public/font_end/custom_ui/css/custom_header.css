@@ -1,0 +1,17 @@
+.header-area.layout-03 .header-search-bar.layout-01 .input-text {
+    max-width: 800px;
+}
+.header-search-bar.layout-01 .input-text {
+    font-size: 14px;
+    color: #222222;
+    border: 1px solid var(--radius-color);
+    width: 800px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 240px 10px 20px;
+}
+.biolife-cart-info {
+    font-size: 0;
+    text-align: center;
+    margin-top: 8px;
+}

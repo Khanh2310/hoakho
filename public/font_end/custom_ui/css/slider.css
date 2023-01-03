@@ -1,0 +1,228 @@
+.content-sider {
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    background: #fff;
+}
+.container-slider {
+    display: flex;
+}
+.slider--box1 {
+    display: flex;
+    flex-grow: 6;
+    height: auto;
+    background: #fff;
+    position: relative;
+    float: left;
+}
+
+.space {
+    width: 0.5%;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    float: left;
+}
+.slider--box2 {
+    width: 35%;
+    height: 300px;
+    background: #ffffff;
+    float: left;
+}
+.slider--box2--kotak {
+    width: 100%;
+    height: 148px;
+}
+.slider--box2--kotak img {
+    height: 148px;
+}
+.clear {
+    clear: both;
+}
+.mb-2 {
+    margin-bottom: 4px;
+}
+
+/* slider */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+
+* {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+body {
+    color: #6e6e6e;
+    font-size: 12px;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.center {
+    width: 100%;
+    height: auto;
+
+    margin: auto;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    border: 10px solid #efefef;
+    border-top: 10px solid #ff8f3f;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transition: 0.3s;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: loader 2s linear infinite;
+}
+
+.loader-inner {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    transform: translate(0, 0) rotate(0deg);
+    border-radius: 50%;
+    border: 8px solid #e2e2e2;
+    border-bottom: 8px solid #66a0ff;
+    animation: loaderInner 1s linear reverse infinite;
+}
+
+@keyframes loader {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes loaderInner {
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+/* Required styles for the slider */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.slider ul {
+    position: absolute;
+}
+
+.slider li {
+    float: left;
+    line-height: 0;
+    text-align: center;
+}
+
+.slider li img {
+    width: 100%;
+    height: auto;
+}
+
+.navigator {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.navigator span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fff;
+    margin: 0 4px;
+    transition: 0.1s;
+    position: relative;
+    top: 0;
+}
+
+.navigator span.active {
+    background: var(--radius-color);
+    width: 10px;
+    height: 10px;
+}
+
+.slider > span {
+    position: absolute;
+    top: 50%;
+    /* background: rgba(0,0,0,0.5); */
+    /* background-color: var(--radius-color); */
+    z-index: 1;
+    padding: 6px 10px;
+    margin: -10px 0 0;
+    color: white;
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+
+.cus_prev {
+    left: 0;
+    /* transform: rotate(90deg); */
+    transform-origin: 0 0;
+}
+
+.cus_next {
+    right: -1px;
+    /* transform: rotate(-90deg); */
+    transform-origin: 100% 0%;
+}
+
+.slider .cus_next:hover,
+.slider .cus_prev:hover {
+    color: var(--radius-color);
+}
+
+/* .slider:hover span, .slider:hover .autoPlay {
+	transform: rotate(0deg);
+} */
+
+.autoPlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transform: translateY(50px);
+    transition: 0.3s;
+}
+
+.autoPlay label {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    display: block;
+}
+
+.autoPlay .chkbox {
+    display: none;
+}
+
+.autoPlay .chkbox:checked + label {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Make it adaptive to any layout */
+
+@media (max-width: 1200px) {
+    .center {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* Required styles for the slider */

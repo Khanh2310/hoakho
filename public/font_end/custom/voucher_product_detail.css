@@ -1,0 +1,273 @@
+.content__voucher {
+    position: relative;
+    padding-bottom: 12px;
+    color: #222;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+.content__voucher--label {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-self: flex-start;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 8px;
+}
+.content__voucher--text-empty {
+    color: var(--radius-color);
+    width: 100%;
+    text-align: center;
+}
+.content__voucher-list {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 278px;
+}
+.content__voucher-item::before {
+    content: "";
+    width: 6px;
+    height: calc(100% - 5px);
+    position: absolute;
+    top: 2.5px;
+    background-image: radial-gradient(#fff 2px, transparent 0);
+    background-size: 6px 6px;
+    background-position-x: -6px;
+    margin-right: 77px;
+}
+.content__voucher-item {
+    cursor: default;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: var(--radius-color) 29;
+    padding: 0 7px;
+    border: 0;
+    white-space: nowrap;
+    color: var(--radius-color);
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.content__voucher-item::after {
+    content: "";
+    width: 6px;
+    height: calc(100% - 5px);
+    position: absolute;
+    top: 2.5px;
+    background-image: radial-gradient(#fff 2px, transparent 0);
+    background-size: 6px 6px;
+    background-position-x: -6px;
+    margin-left: 78px;
+}
+.container__voucher-list {
+    position: absolute;
+    top: calc(100% - 1px);
+    right: 0;
+    padding-left: 0;
+    width: 370px;
+    height: 310px;
+    border-radius: 2px;
+    z-index: 3;
+    background-color: rgb(247, 247, 247);
+    overflow: auto;
+    box-shadow: 0 2px 3px #adacac;
+    display: none;
+}
+.container__voucher-list::after {
+    content: "";
+    z-index: -1;
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent rgb(247, 247, 247) transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+.content__voucher--hover:hover .container__voucher-list {
+    display: block;
+}
+
+/* .container__voucher-item{
+    display: flex;
+    box-shadow: 0 2px 3px #adacac4d;
+    background-color: white;
+    margin: 16px 8px;
+} */
+.container__voucher-item-detail {
+    display: flex;
+    box-shadow: 0 2px 3px #adacac4d;
+    background-color: white;
+    margin: 16px 8px;
+}
+.container__voucher-item--left {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 110px;
+    height: calc(100% - 0.125rem);
+    position: relative;
+    display: flex;
+    background: linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 0.1875rem,
+        #fff 0.25rem
+    );
+    background-origin: border-box;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px dashed #e8e8e8;
+}
+.voucher-item--left-img {
+    height: 58px;
+    width: 58px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #efefef;
+}
+.voucher-item--left-name {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 0.875rem;
+    max-height: 1.75rem;
+    max-width: 90%;
+    text-align: center;
+    -webkit-box-pack: center;
+    word-break: break-word;
+    margin-top: 0.3125rem;
+    padding: 0 0.5rem;
+}
+.container__voucher-item--right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.voucher-item--right-info {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.voucher-item--right-info-name {
+    display: inline;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+.voucher-item--right-info-end-date {
+    padding-top: 2px;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.54);
+}
+.voucher-item--right-btn {
+    display: flex;
+    align-items: center;
+}
+.voucher-item--right-btn button {
+    background-color: var(--radius-color);
+    border: none;
+    color: white;
+    margin-right: 8px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.voucher-item--right-btn:hover button {
+    opacity: 0.8;
+}
+.voucher-item--right-btn a {
+    background-color: var(--radius-color);
+    border: none;
+    color: white;
+    margin-right: 8px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.8;
+    cursor: no-drop;
+}
+.saved-voucher {
+    background-color: var(--radius-color);
+    border: none;
+    color: white;
+    margin-right: 8px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.8;
+    cursor: no-drop;
+}
+._2t7jNq._3LWUvt {
+    background: radial-gradient(
+        circle at 0,
+        at 0.375rem,
+        transparent 0,
+        rgba(0, 0, 0, 0.03) 0.1875rem,
+        #e8e8e8 0,
+        #e8e8e8 0.25rem,
+        #fff 0
+    );
+    background: radial-gradient(
+        circle at 0 0.375rem,
+        transparent 0,
+        rgba(0, 0, 0, 0.03) 0.1875rem,
+        #e8e8e8 0,
+        #e8e8e8 0.25rem,
+        #fff 0
+    );
+    background-size: 0.25rem 0.625rem;
+    background-repeat: repeat-y;
+}

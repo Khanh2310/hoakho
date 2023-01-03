@@ -1,0 +1,160 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal_mini_detail {
+    padding-top: 150px;
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    border-radius: 2px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+.close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--radius-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-mini_prod {
+    padding: 2px;
+    padding-right: 2px;
+    background-color: white;
+    border-top: 3px solid var(--radius-color);
+    color: #000;
+}
+.modal_body_mini_prod {
+    width: 768px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.content-image {
+    width: 361px;
+    margin: 3px;
+}
+.content_info_product {
+    width: 407px;
+    padding-left: 15px;
+}
+.name_product_mini {
+    color: #1c1f19;
+    font-size: 20px;
+}
+.name_product_mini:hover {
+    color: var(--radius-color);
+}
+.price_prod {
+    font-size: 20px;
+}
+.sort_desc_product {
+    padding-top: 15px;
+}
+.from-cart {
+    display: flex;
+    padding-top: 20px;
+}
+.qty-input {
+    width: 140px;
+    display: inline-block;
+    padding-right: 5px;
+    position: relative;
+    align-self: center;
+}
+.qty_prod {
+    border-radius: 9999px;
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid var(--radius-color);
+}
+.qty-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-up {
+    position: absolute;
+    top: -2px;
+}
+.btn-down {
+    position: absolute;
+    top: 15px;
+}
+.up {
+    font-size: 20px;
+    color: rgb(224, 225, 226);
+}
+.down {
+    font-size: 20px;
+    color: rgb(224, 225, 226);
+}
+.btn_add_cart {
+    width: 200px;
+}
+.show_category {
+    padding-top: 15px;
+}
+.show_qty_storage {
+    padding-top: 3px;
+}

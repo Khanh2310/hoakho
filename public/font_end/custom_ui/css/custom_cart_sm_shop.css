@@ -1,0 +1,29 @@
+.content_product_sm_shop {
+    width: 178px;
+    background-color: white;
+}
+.content_qty_rating_sm_shop {
+    padding-bottom: 10px;
+}
+.content_bg_item_sm_shop {
+    background-color: #ffff;
+    margin-left: 16px;
+    margin-right: 15px;
+}
+.content_tab_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.title_tab_header {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-size: contain;
+    color: var(--radius-color);
+}

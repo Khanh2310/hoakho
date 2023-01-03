@@ -1,0 +1,18 @@
+/* custom cart */
+.content_qty_rating{
+    display: flex;
+    justify-content: space-around;
+}
+.name_product{
+    padding: 5px;
+    height: 50px;
+}
+li .content_product{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 280px;
+    height: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}

@@ -1,0 +1,79 @@
+.container {
+    position: relative;
+}
+.content-header {
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    z-index: 10;
+    display: block;
+}
+
+.content-both {
+    display: flex;
+    line-height: 100px;
+}
+
+.logo-page-checkout {
+    height: 55px;
+}
+
+.col-spacing {
+    width: 0.6px;
+    height: 30px;
+    background: #17ac09;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.content-title-page {
+    font-size: 20px;
+    color: var(--radius-color);
+}
+.content-body {
+    display: flex;
+    background: rgb(245, 245, 245);
+}
+.content-img {
+    margin-top: 40px;
+}
+.pd-40 {
+    padding: 20px;
+}
+.img-success {
+    height: 50px;
+    width: 50px;
+}
+.center {
+    text-align: center;
+}
+.content-bill {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 2px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+.content-text-bill {
+    text-align-last: start;
+    padding: 20px;
+    display: flex;
+    flex-grow: 8;
+    flex-direction: column;
+    font-size: 16px;
+}
+.space-between {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.txt {
+    min-width: 250px;
+    padding-right: 20px;
+}
+.line {
+    height: 1px;
+    background: #ebf0eb;
+    margin: 10px;
+}
